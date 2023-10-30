@@ -17,14 +17,16 @@ const CartIcon = ({ cartItem }) => {
   const toggleIsCartOpen = () => {
     if (!isCartOpen) {
       setIsCartOpen(true);
+      return;
     }
-    return
+    setIsCartOpen(false);
+    console.log("false fired");
   };
 
   return (
-    <div className='cart-icon-container' onClick={toggleIsCartOpen}>
-      <ShoppingIcon className='shopping-icon' />
-      <span className='item-count'>{cartCount}</span>
+    <div className="cart-icon-container" onClick={toggleIsCartOpen}>
+      <ShoppingIcon className="shopping-icon" />
+      <span className="item-count">{cartCount}</span>
     </div>
   );
 };
