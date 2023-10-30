@@ -8,7 +8,7 @@ The first image shows the landing page. Each tile animates a slow zoom on hover.
 
 ![The landing page showing five tiles for the five pages. Each animates a slow zoom on hover.](./demo-images/crwn-clthing_landing-page.png)
 
-The second image shows the ‘Hats’ product page. This is a reusable product page component that checks the route the user has navigated to then draws the corresponding set of products to populate the page. The product details are pulled from Firestore and propogated through the site using React Context. Users can add products on this page to their, which adds items to the cart context from the categories context. This design would allow for easy scaling, as the company would simply need to add categories to the original dataset for the changes to be reflected on the site.
+The second image shows the ‘Hats’ product page. This is a reusable product page component that checks the route the user has navigated to then draws the corresponding set of products to populate the page. The product details are pulled from Firestore and propogated through the site using React Context. Users can add products on this page to their cart, which adds items to the cart context from the categories context. This design would allow for easy scaling, as the company would simply need to add categories to the original dataset for the changes to be reflected on the site.
 
 ![A reusable product page component showing a selection of hats that users can purchase, including the description and prices.](./demo-images/crwn-clthing_add-to-cart-hover.png)
 
